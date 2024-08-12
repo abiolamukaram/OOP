@@ -1,3 +1,4 @@
+// classes
 class Car{
     constructor(name,model,year){
         this.name = name
@@ -20,10 +21,22 @@ class User{
     }
 
     login(){
-        return(`${this.email}has logged in successfully`)
+        return(`${this.email} has logged in successfully`)
     }
 
     logout(){
         return(`${this.email} has logged out successfully`)
     }
 }
+
+// abstraction
+const myCar = new Car("Tesla", "X6", "2024")
+console.log(myCar)
+
+const mySecondCar = new Car("Toyota", "Corolla", 2020)
+console.log(mySecondCar)
+
+const firstUser = new User("Abiola", "abc@gmail.com", 9089786756, "hysknnjs")
+console.log(firstUser)
+console.log(firstUser.login())
+console.log(firstUser.logout())
